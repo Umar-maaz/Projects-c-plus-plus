@@ -1,0 +1,53 @@
+## Bank Client Management System
+
+This C++ program implements a simple client management system for MCB Bank. It allows users to perform various transactions such as checking client details, checking account balance, making deposits and withdrawals, changing PIN, searching for clients, and transferring funds between accounts.
+
+### Classes
+
+#### `Client` Class
+
+This class represents a bank client and encapsulates all relevant data and operations related to the client.
+
+##### Public Members:
+
+- `string client_name`: Stores the name of the client.
+- `string cnic`: Stores the CNIC (National Identity Card) of the client.
+- `string address`: Stores the address of the client.
+- `string phone_number`: Stores the phone number of the client.
+- `int pin`: Stores the security PIN of the client.
+- `int balance`: Stores the account balance of the client.
+- `int account_number`: Stores the account number of the client.
+
+##### Member Functions:
+
+- `void get_details(...)`: Sets the details of the client using the provided parameters.
+- `void welcome_screen()`: Displays the main menu and processes user input for different transactions.
+- `void security_pin()`: Validates the security PIN of the client before allowing access to transaction options.
+- `void Show()`: Displays the client's details.
+- `void check_balance()`: Displays the current account balance.
+- `void Deposit()`: Handles deposit transactions and updates the account balance.
+- `void Withdraw()`: Handles withdrawal transactions and updates the account balance.
+- `void ChangePin()`: Allows the client to change their PIN.
+- `void search_another_client()`: Prompts the user to enter an account number to search for and perform transactions.
+- `void transfer_balance()`: Allows the user to transfer funds from one account to another.
+
+#### Main Function
+
+The `main` function creates an instance of the `Client` class and five instances of `Client` objects named `client1`, `client2`, `client3`, `client4`, and `client5`. It sets their details and calls the `search_another_client()` method to start the program.
+
+### How to Use
+
+1. The program begins by prompting the user to enter the account number of the client they want to operate on.
+2. After verifying the account number, the program asks for the security PIN.
+3. Once the PIN is verified, the user is presented with a menu of options: check details, check balance, deposit, withdraw, change PIN, search another client, transfer funds, and exit.
+4. The user can select an option by entering the corresponding number.
+5. Depending on the chosen option, the program performs the selected transaction and updates the account balance accordingly.
+6. The program allows the user to perform multiple transactions in sequence or exit when they are done.
+
+### Benefits
+
+- Provides a structured and user-friendly interface for bank transactions.
+- Encapsulates client data and operations within the `Client` class, promoting modular design and maintainability.
+- Supports searching for and performing transactions on multiple client accounts.
+- Validates PIN security before allowing access to transactions, enhancing security.
+- Includes error handling for invalid input and insufficient balance.

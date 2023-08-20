@@ -1,0 +1,48 @@
+## Periodic Table Element Information Program
+
+This program is a simple implementation of a periodic table element information system. It defines a class `Element` that encapsulates various properties of chemical elements. It then creates instances of the `Element` class for each element in the periodic table, storing their properties. The program also includes a main function that showcases the details of selected elements.
+
+### Class `Element`
+
+#### Properties:
+
+- `element_name`: The name of the chemical element.
+- `standard_state`: The standard physical state of the element (solid, liquid, gas).
+- `electronic_configuration`: The electronic configuration of the element.
+- `atomic_number`: The atomic number of the element (number of protons).
+- `atomic_mass`: The atomic mass of the element.
+- `electronegativity`: The electronegativity of the element.
+- `boiling_point`: The boiling point of the element.
+- `melting_point`: The melting point of the element.
+- `atomic_radius`: The atomic radius of the element.
+- `year_discovered`: The year in which the element was discovered.
+- `symbol`: The chemical symbol of the element.
+
+#### Methods:
+
+- `show_details()`: Prints out the details of the element including its properties.
+
+### Main Function
+
+The main function initializes instances of the `Element` class for each element in the periodic table. Each instance is created by passing the respective properties as arguments to the class constructor. After creating the instances, the main function demonstrates the usage of the `show_details()` method by calling it for selected elements.
+
+### Usage
+
+1. Include necessary header files and the standard namespace.
+2. Define the `Element` class with its properties and methods.
+3. In the `main` function:
+   - Create instances of the `Element` class for each element in the periodic table, providing their properties.
+   - Call the `show_details()` method on specific instances to display their information.
+
+### Compilation and Execution
+
+1. Make sure you have a C++ compiler (e.g., g++) installed.
+2. Save the code in a `.cpp` file (e.g., `periodic_table.cpp`).
+3. Open a terminal or command prompt and navigate to the directory where the file is saved.
+4. Compile the code using the command: `g++ -o periodic_table periodic_table.cpp`
+5. Run the compiled program: `./periodic_table`
+
+### Limitations
+
+- The program uses hardcoded data for element properties, which can be limiting if you need to update the information.
+- It uses a command-line interface, making it difficult to interact with and query the data in real-time.
