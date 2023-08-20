@@ -1,0 +1,44 @@
+## Vending Machine Simulation Program
+
+This program simulates a vending machine that offers a selection of items for purchase. It allows users to choose items, enter money, and receive change. After each transaction, a receipt is generated.
+
+### Class `Vending_machine`
+
+#### Properties:
+
+- `items`: An array containing the names of available items.
+- `price`: An array containing the prices of the items.
+- `quantity`: An array containing the quantity of each item currently in stock.
+- `originalQuantity`: An array containing the original quantity of each item.
+
+#### Methods:
+
+- `Display_Items()`: Displays the list of available items and their prices.
+- `item_selection()`: Handles the process of selecting items, entering money, and dispensing change.
+- `GenerateReceipt()`: Generates a receipt for the purchased items.
+- `operate()`: Initiates the vending machine operation, including displaying items, handling selections, and generating receipts.
+
+### Main Function
+
+The `main` function creates an instance of the `Vending_machine` class and initiates the vending machine's operation.
+
+### Usage
+
+1. Include the necessary header file `<bits/stdc++.h>` for input/output operations.
+2. Define the `Vending_machine` class with its properties and methods.
+3. In the `main` function:
+   - Create an instance of the `Vending_machine` class.
+   - Operate the vending machine by calling the `operate()` method.
+
+### Compilation and Execution
+
+1. Ensure you have a C++ compiler (e.g., g++) installed.
+2. Save the code in a `.cpp` file (e.g., `vending_machine.cpp`).
+3. Open a terminal or command prompt and navigate to the directory where the file is saved.
+4. Compile the code using the command: `g++ -o vending_machine vending_machine.cpp`
+5. Run the compiled program: `./vending_machine`
+
+### Limitations
+
+- The program assumes that the user will always enter valid inputs (e.g., correct item numbers, valid quantities, sufficient money).
+- The user interface doesn't provide detailed error messages for invalid inputs or insufficient funds.

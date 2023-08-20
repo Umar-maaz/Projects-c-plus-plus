@@ -1,0 +1,59 @@
+## Voting System Simulation Program
+
+This program simulates a simple voting system where voters can cast their votes for different candidates of political parties. It allows voters to verify their identities, cast their votes, and displays the voting results at the end.
+
+### Class `Voter`
+
+#### Properties:
+
+- `name`: Name of the voter.
+- `address`: Address of the voter.
+- `voter_id`: Voter's identification number.
+- `age`: Age of the voter.
+- `phone_number`: Phone number of the voter.
+- `cnic`: CNIC (Computerized National Identity Card) number of the voter.
+- `vote_casted`: Indicator for whether the voter has cast a vote.
+
+#### Methods:
+
+- `set_details()`: Sets the details of a voter.
+- `display_voter_details()`: Displays the details of a voter.
+
+### Class `Candidate`
+
+#### Properties:
+
+- `name`: Name of the candidate.
+- `party_name`: Political party's name.
+- `votes`: Number of votes received by the candidate.
+
+#### Methods:
+
+- `candidate_details()`: Sets the details of a candidate.
+- `display_candidates()`: Displays the details of a candidate.
+
+### Main Function
+
+- Creates instances of `Voter` and `Candidate` classes to represent voters and candidates.
+- Sets the details of voters and candidates.
+- Verifies voters' identities and allows them to cast their votes.
+- Displays the voting results at the end.
+
+### Usage
+
+1. Compile the program using a C++ compiler (e.g., g++).
+2. Run the compiled executable in the terminal.
+
+### Limitations
+
+- The program assumes that each voter will enter a valid voter ID for verification.
+- No provisions are made for handling invalid voter IDs, duplicate votes, or edge cases.
+- The voting process does not include security measures like authentication or validation.
+
+### Potential Improvements
+
+- Implement a more secure authentication process for voters.
+- Handle errors and edge cases more gracefully.
+- Store and retrieve voter and candidate data from external files for persistence across program runs.
+- Allow candidates to view their total votes and rankings.
+- Implement better data structures and algorithms for searching and managing voter records and voting results.
