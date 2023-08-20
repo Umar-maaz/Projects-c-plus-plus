@@ -1,0 +1,50 @@
+## Student GPA and CGPA Calculator Program
+
+This program calculates the GPA (Grade Point Average) and CGPA (Cumulative Grade Point Average) for a student over multiple semesters. It takes input for each semester's courses and their corresponding marks, calculates the GPA and CGPA, and displays the results.
+
+### Class `Student`
+
+#### Properties:
+
+- `name`: The name of the student.
+- `id`: The student's roll number or identification.
+- Grades and marks for individual courses:
+  - `prog_grade`, `phy_grade`, `eng_grade`, `calc_grade`, `ict_grade`: Grades for Programming, Physics, English, Calculus, and ICT courses.
+  - `prog_marks`, `phy_marks`, `eng_marks`, `calc_marks`, `ict_marks`: Marks obtained by the student in corresponding courses.
+  - Credit hours for courses: `prog_credit_hrs`, `phy_credit_hrs`, `eng_credit_hrs`, `calc_credit_hrs`, `ict_credit_hrs`.
+- GPA and CGPA calculations:
+  - `prog_gpa`, `phy_gpa`, `eng_gpa`, `calc_gpa`, `ict_gpa`: GPA for each course.
+  - `semester_gpa`: Semester GPA calculated based on the GPAs of individual courses.
+  - `total_grade_points`: Total grade points accumulated over courses.
+  - `total_credit_hrs`: Total credit hours taken in the semester.
+  - `cgpa`: Cumulative GPA calculated based on previous CGPA and current semester GPA.
+
+#### Methods:
+
+- `get_details()`: Takes input for student's name, ID, and marks for individual courses.
+- `calculate_gpa_and_grade()`: Calculates GPA and grade for each course based on input marks.
+- `calculate_semester_gpa()`: Calculates semester GPA by averaging GPAs of all courses.
+- `calculate_cgpa()`: Calculates the CGPA for the current semester.
+- `calculate_multiple_semester_cgpa(float prev_cgpa, float prev_total_credit_hrs)`: Calculates the CGPA for the current and previous semesters combined.
+- `display_data()`: Displays student's details, grades, semester GPA, and CGPA.
+
+### Main Function
+
+The main function initializes a `Student` object and iterates over multiple semesters, collecting input for each semester's courses, calculating GPA, and displaying the results. The user can choose to enter data for the next semester or exit the loop.
+
+### Usage
+
+1. Include necessary header files (`<iostream>`, `<cstring>`, `<cstdlib>`).
+2. Define the `Student` class with its properties and methods.
+3. In the `main` function:
+   - Create a `Student` object.
+   - Loop over each semester, taking input for courses, calculating GPA, CGPA, and displaying results.
+   - Ask the user if they want to enter data for the next semester.
+
+### Compilation and Execution
+
+1. Make sure you have a C++ compiler (e.g., g++) installed.
+2. Save the code in a `.cpp` file (e.g., `gpa_calculator.cpp`).
+3. Open a terminal or command prompt and navigate to the directory where the file is saved.
+4. Compile the code using the command: `g++ -o gpa_calculator gpa_calculator.cpp`
+5. Run the compiled program: `./gpa_calculator`
